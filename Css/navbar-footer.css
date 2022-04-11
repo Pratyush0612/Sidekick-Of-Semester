@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap');
+
+/* ==============================Nav bar =============================== */
+h1,h2,h3,h4,h5{
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yaldevi', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    
+    overflow-x: hidden;
+}
+.up-box{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 5;
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+}
+.margin-top{
+    margin-top: 80px;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.open-nav,
+.close-nav{
+    display: none;
+}
+.navbar1 {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav-logo {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav-logo img {
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(102, 9, 102);
+    border-left: 50px solid white;
+    border-bottom: 70px solid transparent;
+}
+
+.nav-link ul {
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    list-style: none;
+    z-index: 5;
+
+}
+
+.nav-link ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    margin-right: 20px;
+    transition: .3s all ease;
+    text-transform: capitalize;
+}
+
+.nav-link ul li a:hover {
+    color: white;
+}
+
+.no-active::after {
+    content: ' ';
+    display: block;
+    margin: 2px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+}
+
+.no-active:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.active {
+    color: white;
+}
+
+.active::after {
+    content: ' ';
+    display: block;
+    margin: 2px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+/* ============================ Footer ========================= */
+footer{
+    overflow: hidden;
+}
+
+.footer-container {
+    justify-content: space-between;
+    padding: 8vw 8vh;
+    width: calc(100vw-16vw);
+    height: calc(50vh-16vh);
+    background-color: rgb(36, 35, 35);
+    color: rgba(255, 255, 255, 0.534);
+    overflow: hidden;
+}
+.foot1,
+.foot2,
+.foot3{
+    width: 100px;
+}
+.footer-container a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    display: block;
+    margin-bottom: 5px;
+    transition: .4s all ease;
+}
+
+.footer-container a:hover {
+    color: orange;
+    text-decoration: underline;
+    transform: translateX(10px);
+}
+
+.foot3 {
+    flex-direction: column;
+}
+
+.foot3 button {
+    margin: 5px;
+    font-size: 18px;
+    padding: 1vh 35px;
+    background-color: violet;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: .3s ease;
+}
+
+.foot3 button:hover {
+    box-shadow: 0 0 10px violet;
+}
+
+.copy {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+/* ======================scroll animation======================= */
+.lefthide{
+    transform: translateX(-500vh);
+    transition: transform .6s ease;
+}
+.righthide{
+    transform: translateX(500vh);
+    transition: transform .6s ease;
+}
+.tophide{
+    transform: translateY(-1000px);
+    transition: transform 1s ease;
+}
+.show{
+    transform: translateX(0);
+    transform: translateY(0);
+}
+/* =============responsive========================== */
+  @media(max-width:700px) {
+      .open-nav{
+          display: block;
+          position: fixed;
+          top: 15px;
+          right: 20px;
+          cursor: pointer;
+          width: 30px;
+          height: 25px;
+          background-color: rgba(255, 255, 255, 0.568);
+          border-radius: 5px;
+          font-size: 18px;
+          text-align: center;
+          overflow: hidden;
+          z-index:2;
+        }
+
+        .close-nav{
+            display: block;
+          position: absolute;
+          top: 15px;
+          cursor: pointer;
+          width: 30px;
+          height: 25px;
+          border-radius: 5px;
+          font-size: 18px;
+          text-align: center;
+          overflow: hidden;
+            background: none;
+            right: 15px;
+            z-index: 10; 
+            color: white;
+        }
+        .navbar1{
+            width: 50vw;
+            right: -50vw;
+            height: 95vh;
+            transition: .5s all ease;
+            z-index: 10;
+    }
+    .nav-logo{
+        display: none;
+    }
+    .nav-link{
+        width: 100%;
+    }
+    .nav-link ul{
+        position: relative;
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .foot1,
+    .foot2,
+    .foot3{
+        margin-bottom: 20px;
+    }
+}

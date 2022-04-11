@@ -1,0 +1,81 @@
+*{
+    overflow-x: hidden;
+}
+.contact-main {
+    width: 80%;
+    text-align: center;
+    font-size: 150%;
+    color: rgb(66, 150, 153);
+    margin: 50px auto;
+    padding: 5% 0;
+}
+.contact {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    /* border: 1px solid black; */
+}
+
+.con-row1 {
+    width: 100%;
+}
+
+.con-row1 .input,
+.con-row1 .button,
+.con-row1 .textarea {
+    display: block;
+    margin: 50px;
+    border: 0;
+    font-size: 20px;
+    outline: none;
+}
+
+.con-row1 .input,
+.con-row1 .textarea {
+    border-bottom: 1px solid aqua;
+    width: 80%;
+}
+
+.con-row1 .button {
+    width: 40%;
+    margin: auto;
+    background-color: aqua;
+    padding: 5px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.con-row1 .button:hover {
+    background-color: aqua;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.685);
+    border: black;
+}
+
+.con-row1 input::visited {
+    border: 0;
+}
+
+.con-row2 {
+    width: 80%;
+    height: 400px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:700px){
+    .contact {
+        flex-direction: column;
+    }
+    .con-row2 {
+        margin: 20px 0;
+    }
+}
