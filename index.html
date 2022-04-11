@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS | SIDE-KICK-OF-SEMESTER</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbar-footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/logo1.png">
+</head>
+
+<body>
+    <div class="up-box center">
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <!-------------------------header ----------------------------------------->
+    <header>
+        <!-------------------------------------Navbar ------------------------->
+        <div class="open-nav " id="openNav">
+            <i class="fas fa-bars" onclick="openNav()"></i>
+        </div>
+        
+        <div class="navbar1" id="navbar">
+            <div class="close-nav " id="closeNav">
+                <i class="fas fa-times" onclick="closeNav()"></i>
+            </div>
+            <div class="nav-logo center">
+                <img src="images/logo3.png" alt="">
+            </div>
+            <div class="nav-link ">
+                <ul class="center">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="notes.html" class="no-active">Notes</a></li>
+                    <li><a href="video-lecture.html" class="no-active">Lecture</a></li>
+                    <li><a href="test.html" class="no-active">Test</a></li>
+                    <li><a href="coding.html" class="no-active">Coding</a></li>
+                    <li><a href="about-us.html" class="no-active">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------container -------------------------->
+        <video id="videoBg" autoplay muted loop>
+            <source src="images/syudy.mp4" type="video/mp4">
+        </video>
+        <div class="header-container">
+           
+            <div class="hea-cont-left center">
+                <h2>SIDEKICK OF SEMESTER</h2>
+                <h3>A place having solution for your busy life.</h3>
+                <div class="hea-cont-left-bton center">
+                    <button><a href="#feature">Features</a></button>
+                    <button><a href="#links">Follow Us</a></button>
+                </div>
+            </div>
+            <div class="hea-cont-right center">
+                <img src="images/logo1.png" alt="">
+            </div>
+
+        </div>
+    </header>
+    <!----------------------------------- main --------------------------------->
+    <main>
+        <!----------------------------------Feautures------------------------->
+        <div class="fea-cont righthide" id="feature">
+
+            <h2>FEATURES</h2>
+
+            <div class="fea-temp  lefthide ">
+                <div class="fea-img">
+                    <img src="images/notes.jpeg" alt="" >
+                </div>
+                <div class="fea-back center">
+                    <h3>NOTES</h3>
+                    <p>We were providing you notes year wise of B.Tech </p>
+                    <a href="test.html"><button>Take a Tour!</button></a>
+                </div>
+            </div>
+            <div class="fea-temp righthide">
+                <div class="fea-img">
+                    <img src="images/mcq.jpg" alt="" >
+                </div>
+                <div class="fea-back center">
+                    <h3>MCQ</h3>
+                <p>We were providing you MCQ unit wise for B.Tech </p>
+                    <a href="notes.html"><button>Take a Tour!</button></a>
+                </div>
+            </div>
+            <div class="fea-temp lefthide">
+                <div class="fea-img">
+                    <img src="images/questoin-paper.jpeg" alt="" >
+                </div>
+                <div class="fea-back center">
+                    <h3>QUESTION PAPER</h3>
+                <p>We were providing you question paper of previous year for B.Tech </p>
+                    <a href="notes.html"><button>Take a Tour!</button></a>
+                </div>
+                </div>
+            <div class="fea-temp righthide">
+                <div class="fea-img">
+                    <img src="images/test.jpeg" alt="" >
+                </div>
+                <div class="fea-back center">
+                    <h3>TEST</h3>
+                <p>MCQ baset test to enhance your skill </p>
+                    <a href="test.html"><button>Take a Tour!</button></a>
+                </div>
+                
+            </div>
+            <div class="fea-temp lefthide">
+                <div class="fea-img">
+                    <img src="images/video-lecture.jpeg" alt="" >
+                </div>
+                <div class="fea-back center">
+                    <h3>LECTURES</h3>
+                <p>We were providing you Video Lecture unit wise for B.Tech </p>
+                    <a href="video-lecture.html"><button>Take a Tour!</button></a>
+                </div>
+                
+            </div>
+            <div class="fea-temp righthide">
+                <div class="fea-img">
+                    <img src="images/coding.jpeg" alt="" >
+                </div>
+                <div class="fea-back center">
+                    <h3>CODING</h3>
+                <p>We help you how to start Coding from scratch</p>
+                    <a href="coding.html"><button>Take a Tour!</button></a>
+                </div>
+            </div>
+
+        </div>
+        <!--------------------------- helps in ------------------------------>
+        <div class="help center lefthide">
+        <h2 class="help-heading">HELPS IN</h2>
+        <div class="help-container ">
+            <div class="panel active righthide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('images/time.jpeg');">
+                <h3>
+                    TIME SAVER
+                </h3>
+                <P>Need not to worry for notes only study hard.</P>
+                
+            </div>
+            <div class="panel righthide" style=" transition: transform 1.1s ease; background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('images/carrier-maker.jpeg');">
+                <h3>CARRIER MAKER</h3>
+                <p>By coding you can make your future better.</p>
+            </div>
+            <div class="panel righthide" style=" transition: transform 1.5s ease; background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('images/potential-maker.jpeg');">
+                <h3>POTENTIAL BUILDER</h3>
+                <p>Test that make you confident.</p>
+            </div>
+        </div>
+        </div>
+        <!--------------------------------- links --------------------------------->
+        <div class="links center righthide" id="links">
+            <h2 class="help-heading">LINKS</h2>
+        <div class="links-container center">
+            <div class="icon lefthide" style="transition: transform 1.5s ease;"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></div>
+            <div class="icon lefthide" style="transition: transform 1.2s ease;"><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a></div>
+            <div class="icon lefthide" style="transition: transform .9s ease;"><a href="https://telegram.org/"><i class="fab fa-telegram"></i></a></div>
+            <div class="icon lefthide" ><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+        </div>
+    </main>
+    <!------------------------------------------Footer--------------------------->
+    <footer>
+        <div class="footer-container center ">
+            <div class="foot1 lefthide">
+                <a href="index.html"> <i class="fas fa-chevron-right"></i> Home</a>
+                <a href="notes.html"> <i class="fas fa-chevron-right"></i> Notes</a>
+                <a href="video-lecture.html"> <i class="fas fa-chevron-right"> </i>Lectures</a>
+                <a href="test.html"> <i class="fas fa-chevron-right"></i> Test</a>
+                <a href="coding.html"> <i class="fas fa-chevron-right"></i> Coding</a>
+                <a href="about-us.html"> <i class="fas fa-chevron-right"></i> About us</a>
+            </div>
+            <div class="foot2 tophide">
+                <a>More Project</a>
+                <a href="https://abhimrt.github.io/Peppertown/"> <i class="fas fa-chevron-right"></i> Project 1</a>
+                <a href="https://abhimrt.github.io/peppertown/"> <i class="fas fa-chevron-right"></i> Project 2</a>
+                <a href="https://github.com/Pratyush0612"> <i class="fas fa-chevron-right"></i> Github ID</a>
+            </div>
+            <div class="foot3 center righthide">
+                <p> We Welcome your suggestion.</p><br>
+                <a href="about-us.html"><button> Contact</button></a>
+            </div>
+        </div>
+        <!--------------------------Copyright------------------------------->
+        <div class="copy center">
+            <p>Copyright &copy; Pratyush Tyagi</p>
+        </div>
+    </footer>
+    <!------------------------------------javascript------------------------------->
+    <script src="https://kit.fontawesome.com/7847165dd9.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

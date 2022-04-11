@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS | TEST</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/navbar-footer.css">
+    <link rel="icon" href="images/logo1.png">
+</head>
+<body >
+    <div class="up-box center">
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+     <!-------------------------header ----------------------------------------->
+     <div class="open-nav " id="openNav">
+            <i class="fas fa-bars" onclick="openNav()"></i>
+        </div>
+        
+        <div class="navbar1" id="navbar">
+            <div class="close-nav " id="closeNav">
+                <i class="fas fa-times" onclick="closeNav()"></i>
+            </div>
+        <div class="nav-logo center">
+            <a href="index.html"><img src="images/logo3.png" alt=""></a>
+        </div>
+        <div class="nav-link ">
+            <ul class="center">
+                <li><a href="index.html" class="no-active">Home</a></li>
+                <li><a href="notes.html" class="no-active">Notes</a></li>
+                <li><a href="video-lecture.html" class="no-active">Lecture</a></li>
+                <li><a href="test.html" class="active">Test</a></li>
+                <li><a href="coding.html" class="no-active">Coding</a></li>
+                <li><a href="about-us.html" class="no-active">About us</a></li>
+            </ul>
+        </div>
+    </div>
+        </header>
+        <!------------------------------------main--------------------------------------->
+        <main>
+            <!------------------------ test info -------------------------->
+            <div class="before-test-container center" id="testContainer">
+                <h2 id="result">This Page contain some Quiz related to HTMl. Each correct answer contain 1 marks.You have to score atleast 6 marks to pass the test</h2>
+                <button id="button" onclick="closeContainer()">Start Test</button>
+            </div>
+            <!-------------------------time display---------------------------->
+            <span class="timeDisplay">Time Left:</span>
+            <span id="timeDisplay" >00</span>
+            <!-------------------------------test----------------------------->
+        <div class="container margin-top">
+            <div class="row center">
+                <div class="col-md-10 text-center">
+                    <h3>Quiz Based on basic HTML</h3>
+                </div>
+            </div>
+            <hr>
+            <form action="" onsubmit=" check(); return false">
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>1) HTML stands for</h5>
+                        <ol>
+                            <li><input type="radio" name="Ques1" > HighText Machine Language</li>
+                            <li><input  type="radio" name="Ques1" > HyperText and links Markup Language</li>
+                            <li><input type="radio" name="Ques1" id="Ques1" >HyperText Markup Language</li>
+                            <li><input type="radio" name="Ques1" >None of these</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>2) The correct sequence of HTML tags for starting a webpage is -
+                        </h5>
+                        <ol>
+                            <li><input type="radio" name="Ques2" required> Head, Title, HTML, body</li>
+                            <li><input  type="radio" name="Ques2" required> HTML, Body, Title, Head</li>
+                            <li><input type="radio" name="Ques2"  required>HTML, Head, Body, Title</li>
+                            <li><input type="radio" name="Ques2" id="Ques2"required>HTML, Head, Title, Body</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>3) Which of the following element is responsible for making the text bold in HTML?
+                        </h5>
+                        <ol>
+                            <li><input type="radio" name="Ques3" required> &#60;pre&#62; </li>
+                            <li><input  type="radio" name="Ques3" required> &#60;a&#62;</li>
+                            <li><input type="radio" name="Ques3" id="Ques3" required>&#60;b&#62;</li>
+                            <li><input type="radio" name="Ques3" required>&#60;br&#62;</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>4) Which of the following tag is used for inserting the largest heading in HTML?
+                        </h5>
+                        <ol>
+                            <li><input type="radio" name="Ques4" required> &#60;h3&#62;</li>
+                            <li><input  type="radio" name="Ques4" id="Ques4" required> &#60;h1&#62;</li>
+                            <li><input type="radio" name="Ques4"  required>&#60;h5&#62;</li>
+                            <li><input type="radio" name="Ques4" required>&#60;h6&#62;</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>5) Which of the following tag is used to insert a line-break in HTML?</h5>
+                        <ol>
+                            <li><input type="radio" name="Ques5" id="Ques5" required> &#60;br&#62;</li>
+                            <li><input  type="radio" name="Ques5" required> &#60;a&#62;</li>
+                            <li><input type="radio" name="Ques5"  required>&#60;pre&#62;</li>
+                            <li><input type="radio" name="Ques5" required>&#60;b&#62;</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>6) How to create an unordered list (a list with the list items in bullets) in HTML?
+                        </h5>
+                        <ol>
+                            <li><input type="radio" name="Ques6" id="Ques6" required> &#60;ul&#62;</li>
+                            <li><input  type="radio" name="Ques6" required> &#60;ol&#62;</li>
+                            <li><input type="radio" name="Ques6"  required>&#60;li&#62;</li>
+                            <li><input type="radio" name="Ques6" required>&#60;i&#62;</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>7) Which character is used to represent the closing of a tag in HTML?r</h5>
+                        <ol>
+                            <li><input type="radio" name="Ques7" required> \</li>
+                            <li><input type="radio" name="Ques7" required> !</li>
+                            <li><input type="radio" name="Ques7" id="Ques7" required>/</li>
+                            <li><input type="radio" name="Ques7" required>.</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>8) How to create a hyperlink in HTML?</h5>
+                        <ol>
+                            <li><input type="radio" name="Ques8" id="Ques8" required> &#60;a href = "www.SOS.com"&#62; SOS.com &#60;/a&#62;</li>
+                            <li><input  type="radio" name="Ques8" required> &#60;a url = "www.SOS.com"&#62; SOS.com &#60;/a&#62;</li>
+                            <li><input type="radio" name="Ques8"  required>&#60;a link = "www.SOS.com"&#62; SOS.com &#60;/a&#62;</li>
+                            <li><input type="radio" name="Ques8" required>&#60;a &#62; www.SOS.com&#60;SOS.com /a&#62;</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center">
+                    <div class="col-md-10 ">
+                        <h5>9) Which of the following element is responsible for making the text italic in HTML?
+                        </h5>
+                        <ol>
+                            <li><input type="radio" name="Ques9" id="Ques9" required> &#60;i&#62;</li>
+                            <li><input  type="radio" name="Ques9" required> &#60;italic&#62;</li>
+                            <li><input type="radio" name="Ques9"  required>&#60;it&#62;</li>
+                            <li><input type="radio" name="Ques9" required>&#60;pre&#62;</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row center" >
+                    <div class="col-md-10  ">
+                        <h5>10) How to insert an image in HTML?
+                        </h5>
+                        <ol>
+                            <li><input type="radio" name="Ques10"  required> &#60;img href = "jtp.png"&#62;</li>
+                            <li><input  type="radio" name="Ques10" required> &#60;img url = "jtp.png"&#62;</li>
+                            <li><input type="radio" name="Ques10"  required>&#60;img link = "jtp.png"&#62;</li>
+                            <li><input type="radio" name="Ques10" id="Ques10" required>&#60;img src = "jtp.png"&#62;</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-content-around">
+                    <div class="col-md-10 center">
+                        <input type="submit" class="button m-3">
+                    </div>
+                </div>
+                <hr>
+            </form>
+        </div>
+        </main>
+         <!------------------------------------------Footer--------------------------->
+    <footer>
+        <div class="footer-container center ">
+            <div class="foot1 lefthide">
+                <a href="index.html">Home</a>
+                <a href="notes.html">Notes</a>
+                <a href="video-lecture.html">Lectures</a>
+                <a href="test.html">Test</a>
+                <a href="coding.html">Coding</a>
+                <a href="about-us.html">About us</a>
+            </div>
+            <div class="foot2 tophide">
+                <a>More Project</a>
+                <a href="https://abhimrt.github.io/project1/">Project 1</a>
+                <a href="https://abhimrt.github.io/project2/">Project 2</a>
+                <a href="https://github.com/Abhimrt">Github ID</a>
+            </div>
+            <div class="foot3 center righthide">
+                <p> We Welcome your suggestion.</p><br>
+                <a href="about-us.html"><button> Contact</button></a>
+            </div>
+        </div>
+        <!--------------------------Copyright------------------------------->
+        <div class="copy center">
+            <p>Copyright &copy; Pratyush Tyagi</p>
+        </div>
+    </footer>
+<!------------------------------------javascript------------------------------->
+<script src="https://kit.fontawesome.com/7847165dd9.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script></body>
+<script src="js/test.js"></script></body>
+</html>

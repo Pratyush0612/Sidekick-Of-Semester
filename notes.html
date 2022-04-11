@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS | NOTES</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbar-footer.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="icon" href="images/logo1.png">
+    <style>
+        *{
+            overflow-x: hidden;
+        }
+        body{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.329)), url("images/notes.jpeg");
+            background-position: 50% 9%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .chem-btn{
+            width: 100%;
+            background-color: transparent;
+            outline: none;
+            
+            padding: 5px;
+            font-size: 25px;
+            border-radius: 35px;
+            color: white;
+            border: 1px solid white;
+    
+    transition: 1s ease;
+        }
+        .chem-btn:hover{
+            box-shadow: 1px 1px 20px 0 violet, -1px -1px 20px 0 violet;
+    background-color: violet;
+        }
+        @media(max-width:700px) {
+            body{
+                background-image: linear-gradient(violet,violet);
+            }
+            .chem-btn{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="up-box center">
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+     <!-------------------------header ----------------------------------------->
+     <div class="open-nav " id="openNav">
+            <i class="fas fa-bars" onclick="openNav()"></i>
+        </div>
+        
+        <div class="navbar1" id="navbar">
+            <div class="close-nav " id="closeNav">
+                <i class="fas fa-times" onclick="closeNav()"></i>
+            </div>
+        <div class="nav-logo center">
+            <img src="images/logo3.png" alt="">
+        </div>
+        <div class="nav-link ">
+            <ul class="center">
+                <li><a href="index.html" class="no-active">Home</a></li>
+                <li><a href="notes.html" class="active">Notes</a></li>
+                <li><a href="video-lecture.html" class="no-active">Lecture</a></li>
+                <li><a href="test.html" class="no-active">Test</a></li>
+                <li><a href="coding.html" class="no-active">Coding</a></li>
+                <li><a href="about-us.html" class="no-active">About us</a></li>
+            </ul>
+        </div>
+    </div>
+        </header>
+        <main>
+            <div class="container margin-top">
+                <div class="row justify-content-around ">
+                    <div class="col-md-10 mb-3 mt-3 lefthide">
+                        <a href="https://drive.google.com/drive/folders/1BKQN-n1FyrpwzgHL14WFPoSm1RmPm-tg?usp=sharing" ><button class="chem-btn mb-3 mt-3">KAS202T | Engineering Chemistry</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around mb-3 mt-3">
+                    <div class="col-md-10 righthide">
+                        <a href="https://drive.google.com/drive/folders/1aPL5P33yFl-VVHMa-kv0bUoLSSFRC3tf?usp=sharing"><button class="chem-btn mb-3 mt-3">KEC201T | Emerging Domain in Electronics Engineering</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around mb-3 mt-3">
+                    <div class="col-md-10 lefthide">
+                        <a href="https://drive.google.com/drive/folders/1qRIzICdtZO4SsKEJncgTmJE3VwmVRG-1?usp=sharing"><button class="chem-btn mb-3 mt-3">KMC202 | Emerging Technology for Engineering</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around mb-3 mt-3">
+                    <div class="col-md-10 righthide">
+                        <a href="https://drive.google.com/drive/folders/1NfvuJfhedVwFfrPP_0hiyI96kyIwK2et?usp=sharing"><button class="chem-btn mb-3 mt-3">KME201T | Fundamentals of Mechanical Engineering & Mechatronics</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around mb-3 mt-3">
+                    <div class="col-md-10 lefthide">
+                        <a href="https://drive.google.com/drive/folders/19O5Gx5FKWEQxRYpYWxOeM1YnbBdF_ubs?usp=sharing"><button class="chem-btn mb-3 mt-3">AS203T | Engineering Mathematics-II</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around mb-3 mt-3">
+                    <div class="col-md-10 righthide">
+                        <a href="https://drive.google.com/drive/folders/1C2rjKsX1c1UAi_5PCrpkI1VbialAWBsD?usp=sharing"><button class="chem-btn mb-3 mt-3">KNC201 | Soft Skill II</button></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!------------------------------------------Footer--------------------------->
+    <footer>
+        <div class="footer-container center ">
+            <div class="foot1 lefthide">
+                <a href="index.html">Home</a>
+                <a href="notes.html">Notes</a>
+                <a href="video-lecture.html">Lectures</a>
+                <a href="test.html">Test</a>
+                <a href="coding.html">Coding</a>
+                <a href="about-us.html">About us</a>
+            </div>
+            <div class="foot2 tophide">
+                <a>More Project</a>
+                <a href="https://abhimrt.github.io/project1/">Project 1</a>
+                <a href="https://abhimrt.github.io/project2/">Project 2</a>
+                <a href="https://github.com/Abhimrt">Github ID</a>
+            </div>
+            <div class="foot3 center righthide">
+                <p> We Welcome your suggestion.</p><br>
+                <a href="about-us.html"><button> Contact</button></a>
+            </div>
+        </div>
+        <!--------------------------Copyright------------------------------->
+        <div class="copy center">
+            <p>Copyright &copy; Pratyush Tyagi</p>
+        </div>
+    </footer>
+<!------------------------------------javascript------------------------------->
+<script src="https://kit.fontawesome.com/7847165dd9.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script></body>
+</html>
